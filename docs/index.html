@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>yin yang</title>
+        <link rel="stylesheet" href="index.css"/>
+        <script async type="module" src="index.mjs"></script>
+    </head>
+    <body>
+        <main>
+            <canvas id="scene"></canvas>
+            <footer>
+                <div class="score">
+                    <span class="trophy" id="blackTrophy">&#127942;</span>
+                    <span>
+                        black&nbsp;<span id="blackScore">0</span>&nbsp;:&nbsp;<span id="whiteScore">0</span>&nbsp;white
+                    </span>
+                    <span class="trophy" id="whiteTrophy">&#127942;</span>
+                </div>
+                <span>
+                    <input type="checkbox" id="debugMode" title="Click to step"/><label for="debugMode" title="Click to step">Debug mode</label>
+                    &nbsp;
+                    <button id="restartBtn">Restart</button>
+                </span>
+            </footer>
+        </main>
+    </body>
+</html>

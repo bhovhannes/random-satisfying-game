@@ -1,0 +1,49 @@
+html, body {
+    padding:0;
+    margin:0;
+    background: #333;
+}
+
+* {
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    text-align: center;
+    --scene-size: 512px;
+    --scene-border-width: 1px;
+}
+
+main {
+    margin: 8px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(var(--scene-size) + 2 * var(--scene-border-width));
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 8px 2px;
+}
+
+#scene {
+    border: var(--scene-border-width) solid #333;
+    aspect-ratio: 1;
+}
+
+.score {
+    display: flex;
+    gap: 4px;
+}
+
+.trophy {
+    visibility: hidden;
+}
+
+#blackScore, #whiteScore {
+    font-family: monospace;
+    font-size: 1.2rem;
+}
